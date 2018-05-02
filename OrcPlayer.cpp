@@ -40,7 +40,7 @@ OrcPlayer::OrcPlayer(const OrcPlayer& outer)
 	this->constructFlag=1;
 }
 
-void OrcPlayer::setExp(int Exp)
+/*void OrcPlayer::setExp(int Exp)
 {
 	if(Exp>=0)
 	{
@@ -62,15 +62,16 @@ void OrcPlayer::setExp(int Exp)
 	{
 		cout<<"Error: Exp of "<<this->getName()<<" is smaller than zero."<<endl;
 	}
-}
+}*/
 
 void OrcPlayer::increaseExp(int num)
 {
-	if(num>=0) this->setExp(this->exp+num);
+	cout<<this->getExp()+num<<endl;
+	if(num>=0) this->setExp(this->getExp()+num);
 	else cout<<"Error: the increment of Exp should be a positive integer."<<endl;
 }
 
-int OrcPlayer::getExp()const{return this->exp;}
+//int OrcPlayer::getExp()const{return this->exp;}
 
 void OrcPlayer::setLevel(int Level)
 {

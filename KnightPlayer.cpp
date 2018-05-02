@@ -40,7 +40,7 @@ KnightPlayer::KnightPlayer(const KnightPlayer& outer)
 	this->constructFlag=1;
 }
 
-void KnightPlayer::setExp(int Exp)
+/*void KnightPlayer::setExp(int Exp)
 {
 	if(Exp>=0)
 	{
@@ -62,15 +62,15 @@ void KnightPlayer::setExp(int Exp)
 	{
 		cout<<"Error: Exp of "<<this->getName()<<" is smaller than zero."<<endl;
 	}
-}
+}*/
 
 void KnightPlayer::increaseExp(int num)
 {
-	if(num>=0) this->setExp(this->exp+num);
+	if(num>=0) this->setExp(this->getExp()+num);
 	else cout<<"Error: the increment of Exp should be a positive integer."<<endl;
 }
 
-int KnightPlayer::getExp()const{return this->exp;}
+//int KnightPlayer::getExp()const{return this->exp;}
 
 void KnightPlayer::setLevel(int Level)
 {

@@ -40,7 +40,7 @@ MagicianPlayer::MagicianPlayer(const MagicianPlayer& outer)
 	this->constructFlag=1;
 }
 
-void MagicianPlayer::setExp(int Exp)
+/*void MagicianPlayer::setExp(int Exp)
 {
 	if(Exp>=0)
 	{
@@ -62,15 +62,15 @@ void MagicianPlayer::setExp(int Exp)
 	{
 		cout<<"Error: Exp of "<<this->getName()<<" is smaller than zero."<<endl;
 	}
-}
+}*/
 
 void MagicianPlayer::increaseExp(int num)
 {
-	if(num>=0) this->setExp(this->exp+num);
+	if(num>=0) this->setExp(this->getExp()+num);
 	else cout<<"Error: the increment of Exp should be a positive integer."<<endl;
 }
 
-int MagicianPlayer::getExp()const{return this->exp;}
+//int MagicianPlayer::getExp()const{return this->exp;}
 
 void MagicianPlayer::setLevel(int Level)
 {

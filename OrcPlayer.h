@@ -16,15 +16,15 @@ class OrcPlayer: public GeneralPlayer
 		OrcPlayer(const OrcPlayer&);
 		friend ostream& operator<<(ostream& os, OrcPlayer& rhs);
 		void setLevel(int);
-		void setExp(int);
+		//void setExp(int);
 		void increaseExp(int);
 		void levelUp();
 		
-		int getExp()const;
+		//int getExp()const;
 		
 	private:
 		void setAttr(int);
-		int exp;
+		//int exp;
 };
 
 

@@ -16,17 +16,17 @@ class KnightPlayer: public GeneralPlayer
 		KnightPlayer(const KnightPlayer&);
 		friend ostream& operator<<(ostream& os, KnightPlayer& rhs);
 		void setLevel(int);
-		void setExp(int);
+		//void setExp(int);
 		void increaseExp(int);
 		void levelUp();
 		
-		int getExp()const;
+		//int getExp()const;
 		
 		void heal();
 		
 	private:
 		void setAttr(int);
-		int exp;
+		//int exp;
 };
 
 

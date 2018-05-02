@@ -16,17 +16,17 @@ class MagicianPlayer: public GeneralPlayer
 		MagicianPlayer(const MagicianPlayer&);
 		friend ostream& operator<<(ostream& os, MagicianPlayer& rhs);
 		void setLevel(int);
-		void setExp(int);
+		//void setExp(int);
 		void increaseExp(int);
 		void levelUp();
 		
-		int getExp()const;
+		//int getExp()const;
 		
 		void pray();
 		
 	private:
 		void setAttr(int);
-		int exp;
+		//int exp;
 };
 
 

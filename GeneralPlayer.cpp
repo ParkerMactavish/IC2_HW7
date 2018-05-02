@@ -47,18 +47,16 @@ void GeneralPlayer::setExp(int Exp)
 {
 	if(Exp>=0)
 	{
-		if(Exp<ceil(pow(10, log2(this->level))))
+		if(Exp<=ceil(pow(10, log2(this->level))))
 		{
 			this->exp=ceil(pow(10, log2(this->level)));
 		}
 		else 
 		{
 			this->exp=Exp;
-			
-			while(this->exp>this->lvup_exp)
-			{
-				this->levelUp();
-			}
+			int tmpLevel=this->getLevel();
+			for(; ceil(pow(10, log2(tmpLevel+1)))<=Exp; tmpLevel++);
+			this->setLevel(tmpLevel);
 		}
 	}
 	else
