@@ -214,5 +214,6 @@ int main()
 	OPTest();
 	MPTest();
 	KPTest();
+	system("PAUSE");
 	return 0;
 }

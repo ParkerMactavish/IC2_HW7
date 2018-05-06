@@ -182,4 +182,5 @@ ostream& operator<< (ostream& os, GeneralPlayer& rhs)
 	cout<<rhs.lvup_exp-rhs.exp<<" to go to level up"<<endl;
 	cout<<"Att: "<<rhs.attack<<endl;
 	cout<<"Def: "<<rhs.defense<<endl;
+	return os;
 }
