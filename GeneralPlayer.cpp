@@ -78,7 +78,8 @@ void GeneralPlayer::setLevel(int Level)
 		this->setAttr(Level);		
 		this->setExp(ceil(pow(10, log2(this->level))));
 	}
-	else if(Level<=this->level)
+	else if (Level > 0 && Level == this->level);
+	else if(Level<this->level)
 	{
 		cout<<"Error: Level of "<<this->getName()<<" is smaller than or equal to previous."<<endl;
 	}
